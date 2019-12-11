@@ -1,0 +1,49 @@
+.about-post{
+    line-height: 2em;
+    .about-single-post{
+        max-width: 100%;
+    }
+
+    .about-img-box{
+        width: 325px;
+        height: 265px;
+    }
+
+    .about-content{
+        margin-top: 3em;
+        
+        h1{
+            font-size: 2em;
+            margin-top: 1em;
+            margin-bottom: .75em;
+        }
+        p{
+
+        }
+    }
+}
+
+@media screen and (min-width: 500px){
+    .about-post{
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: left;
+
+        .about-single-post{
+            max-width: 60%;
+        }
+        .about-img-box{
+            margin: unset;
+        }
+    
+        .about-content{
+            margin-top: 3em;
+            
+            h1{
+                font-size: 2em;
+                margin-top: 1em;
+                margin-bottom: .75em;
+            }
+        }
+    }
+}

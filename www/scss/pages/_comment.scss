@@ -1,0 +1,139 @@
+.comment{
+    margin-top: 10em;
+    border-top: 2px solid $accent;
+
+}
+.comments{
+    max-width: 50%;
+    margin: 0 auto;
+}
+.comment-title{
+    display: inline-block;
+    padding: .7em 2.5em;
+    background: $accent;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1em;
+    font-style: italic;
+    color: #fefefe;
+    letter-spacing: 1px;;
+    margin-bottom: 5em;
+}
+.comment-body{
+    margin-top: 0;
+    padding-bottom: 2em;
+}
+.comment-meta{
+    font-family: $font-arial;
+    font-weight: 400;
+    font-style: italic;
+    text-align: left;
+    .comment-author{
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+        display: inline;
+        img{
+            display: inline;
+            width: 56px;
+            height: 56px;
+            float: left;
+            margin: 6px 10px 0 10px;
+        }
+    }
+    .comment-metadata{
+        display: inline;
+        font-size: x-small;
+    }
+}
+
+.comment-content{
+    font-weight: $font-light;
+}
+b{
+    font-weight: bolder;
+    margin-right: 1em;
+}
+.children{
+    margin-left: 5em;
+}
+
+@media screen and (max-width: 960px){
+    .comments{
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .comments{
+        max-width: 100%;
+    }
+}
+
+form{
+    // background: brown;
+    margin-top: 2em;
+    padding: 2em;
+
+    h4{
+        text-align: left;
+        margin-left: 3.5em;
+        margin-bottom: 1em;
+        font-size: $font-large;
+    }
+    .label,textarea{
+        margin-left: 8em;
+        margin-bottom: 1em;        
+        border: 2px solid #4444;
+       
+    }
+    .submit{
+        display: block;
+        margin-left: 8em;
+        background: $accent;
+        color: #fefefe;
+        padding: 1em 2em;
+        font-size: normal;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 796px){
+    form{
+        h4{
+            text-align: left;
+            margin-left: 1em;
+            margin-bottom: 1em;
+            font-size: $font-large;
+        }
+        .label,textarea{
+            margin-left: 2em;
+        }
+        .submit{
+            margin-left: 2em;
+        }
+    }
+}
+
+@media screen and (max-width: 496px){
+    form{
+        margin-left: -3em;
+        h4{
+            margin-left: 0;
+            margin-bottom: 1em;
+            font-size: $font-large;
+        }
+        .label,textarea{
+            margin-left: 0;
+        }
+        .textarea{
+            columns: 40;
+        }
+        .submit{
+            margin-left: 0em;
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.all-post{
+    max-width: 700px;
+    margin: 0 auto;
+
+
+}
+.post-content{
+    max-width: 756px !important;
+    margin: 0 auto;
+    display: flex;
+
+    a{
+        display: inline-block;
+        margin-bottom: 4em;
+    }
+    .article-content{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+
+        h4{
+            font-size: 2em;
+            margin-bottom: .7em;
+            line-height: 1em;
+        }
+        p{
+            font-size: 16px;
+            margin-bottom: 1em;
+            font-family: 'Lato', sans-serif, Arial, Helvetica, sans-serif;
+        }
+
+        .btn{
+            display: none;
+            align-self: left;
+            // margin: auto;
+            align-self: flex-end;
+            padding: 1em 2em;
+            margin-right: 1em;
+
+        }
+        .btn-accent{
+            background-color: $accent;
+            color:  white;
+            transition: background-color .5s;
+        }
+        .btn-accent:hover{
+            background-color: darkgreen;
+        }
+    }
+
+}
+.img-box{
+    width: 650px;
+    height: 167px;    
+    .img-fluid{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+@media screen and (max-width: 960px){
+    .container{
+        max-width: 100%;
+
+        .all-post{
+            max-width: 100%;
+        }
+    }
+    .post-content{
+        width: 90%;
+
+        .article-content{
+            h4{
+                font-size: 1.7em;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    main{
+        margin-top: 7em;
+    }
+    .img-box{
+        display: none;
+        width: 250px;
+        height: 90px;    
+        .img-fluid{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .post-content{
+        width: 90%;
+
+        .article-content{
+            h4{
+                font-size: 1.7em;
+                line-height: 1.3em;
+                text-transform: uppercase ;
+                font-weight: 400;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 200;
+            }
+        }
+    }
+}

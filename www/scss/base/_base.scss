@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "liga";
+    line-height: 1.4em;
+
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+a{
+    text-decoration: none;
+    // background: green;
+    color: inherit;    
+    position: relative;
+}
+a:active,
+a:focus{
+    color: $accent;
+
+}
+p{
+    line-height: 2em;
+    margin-left: .5em;
+}
+main{
+    margin-top: 5.5em;
+    // padding: 0 2.5em;
+}
+
+ol,
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+section{
+    max-width: 1420px !important;
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+@media screen and(max-width: 950px){
+    section{
+        max-width: 90% !important;
+    }
+}
+
+.modal-open{
+    overflow: hidden;
+    position: fixed;
+}
